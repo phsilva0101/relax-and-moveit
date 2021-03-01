@@ -1,0 +1,21 @@
+.challengesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 4rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d7d8da;
+    font-weight: 500;
+    
+}
+
+.challengesContainer span:first-child {
+    font:1.25rem 'Inter', sans-serif;
+}
+
+.challengesContainer span:last-child {
+    font:1.5rem 'Inter', sans-serif;
+}
+
+

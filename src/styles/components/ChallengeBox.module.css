@@ -1,0 +1,128 @@
+.ChallengeBoxContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10PX;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+    height: 100%;
+    padding: 1.5rem 2rem;
+    margin-left: 5rem;
+
+    background: var(--white);
+}
+
+/* --------------------ChallengeBox desativada -------------- */
+.challengeNotActive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.challengeNotActive strong {
+    font: 500 1.4rem 'Inter';
+    line-height: 1.4;
+    text-align: center;
+
+  }
+
+  .challengeNotActive p{
+      font: 400 1.1rem 'Inter';
+      display: flex;
+      align-items: center;
+      line-height: 1.4;        
+      min-width: 70%;
+      margin-top: 3rem;
+
+  }
+
+  .challengeNotActive p img {
+      width: 15%;
+      display: flex;
+      margin-right:1.5rem;
+  }
+
+  /* ----------------------- ChallengeBox ativa ------------------- */
+
+  .challengeActive {
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .challengeActive header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 600 1.2rem 'Inter';
+      padding: 0 2rem 1.5rem;
+      color: var(--blue);
+      border-bottom: 1px solid var(--gray-line);
+  }
+
+  .challengeActive main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+
+  }
+
+
+
+  .challengeActive main strong{
+      font: 600 2rem 'Inter'; 
+      color: var(--title);
+      margin: 1.6rem 0 1rem;
+  }
+
+  .challengeActive main p {
+       font: 400 1rem 'Inter'; 
+       line-height: 1.5;
+  }
+
+  /* --------------- Estilizando os botões ---------- */
+
+.challengeActive footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}      
+
+.challengeActive footer button{
+    height: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 600;
+
+    transition: filter 0.2s;
+}
+
+.challengeFailedButton{
+    background: var(--red);
+    color: var(--white);
+}
+
+.challengeSuceededButton {
+    background: var(--green);
+    color: var(--white);
+}
+
+.challengeActive footer button:hover{
+    filter: brightness(0.9); /* Diminuindo o brilho nos dois botões em 10% com esse 'HACK' */
+}
+  
